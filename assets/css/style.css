@@ -1,0 +1,24 @@
+.productos{
+    border: 5px solid black;
+    border-radius: 50%;
+}
+    
+
+.header{
+    color: white;
+    background-image: url("https://static.diariofemenino.com/media/2996/sonarconfuego.jpg");
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+
+footer{
+    margin-top: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+}
+

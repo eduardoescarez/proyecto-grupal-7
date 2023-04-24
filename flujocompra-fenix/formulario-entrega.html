@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
+    <title>Formulario de compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../assets/imgs/fenix2.png" alt="Logo" height="30" class="d-inline-block align-text-top">  Fenix  </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../nav/comocomprar.html">Cómo Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../nav/marcasdistrubuidas.html">Marcas Distribuidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../nav/pagosytranferencias.html">Pagos y Transferencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../nav/contactos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid header">
+        <div class="row text-center">
+                <h1>Botilleria Fenix</h1>
+                <h2>¡La más barata de Valparaíso!</h2>
+        </div>
+    </div>
+
+    <section>
+        <div class="row text-center">
+            <h2>(2/3) ¿Donde dejamos tu pedido?</h2>
+            <p>Ahora te vamos a pedir un par de datos para que nuestro personal pueda dejar en tú pedido en tu negocio o lugar preferido</p>
+        </div>
+        <form>
+            <div class="row formulario1">
+                <div class="col text-end">Dirección completa</div>
+                <div class="col"><input name="direccion"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Ciudad</div>
+                <div class="col"><input name="ciudad"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Comuna</div>
+                <div class="col"><input name="comuna"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Nombre del receptor del pedido</div>
+                <div class="col"><input name="nombre-receptor"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">RUT</div>
+                <div class="col"><input name="rut-receptor"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Teléfono de contacto</div>
+                <div class="col"><input type="number" name="telefono"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Email de contacto</div>
+                <div class="col"><input type="email" name="email"></div>
+            </div>
+            <div class="row formulario1">
+                <div class="col text-end">Notas adicionales</div>
+                <div class="col"><textarea name="comment" cols="30" rows="6">Ingrese aquí datos adicionales para la entrega del pedido</textarea></div>
+            </div>
+            <div class="row text-center">
+                <div class="col"><button id="confirmar-btn" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Confirmar</button>
+                </div>
+            
+                <div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Su compra está lista!</p>
+                                <br>
+                                <p>Te dirigiremos al resumen de la compra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section><br>
+
+    <footer>
+        <p>© 2023, Fenix - Derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../assets/js/confirmaModal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</body>
+
+</html>
